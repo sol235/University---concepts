@@ -57,3 +57,6 @@ switch(choice){
 	case 4:
 		break;
 }
+	
+	
+	// https://www.geeksforgeeks.org/array-of-objects-in-c-with-examples/
