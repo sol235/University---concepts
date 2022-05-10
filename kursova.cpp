@@ -9,12 +9,8 @@ public:
 	int Daily_salary;
 	int Days_worked;
 
-	void Data() {				
-		cout << "Name - "; cin >> Name;
-		cout << "EGN - "; cin >> EGN;
-		cout << "daily salary -"; cin >> Daily_salary;
-		cout << "days worked -"; cin >> Days_worked;
-	}
+	void GetData();
+	void DisplayData();
 
 	Employee(string name, int egn, int daily_salary, int days_worked){     
         Name = name ;
@@ -23,14 +19,25 @@ public:
 		Days_worked = days_worked;
     }
 
-
-
 };
 
+	void Employee::GetData(){
+		cout << "Name - "; cin >> Name;
+		cout << "EGN - "; cin >> EGN;
+		cout << "daily salary -"; cin >> Daily_salary;
+		cout << "days worked -"; cin >> Days_worked;
+	}
+
+	void Employee::DisplayData(){
+		cout << Name << endl;
+		cout << EGN << endl;
+		cout << Daily_salary << endl;
+		cout << Days_worked << endl;
+	}
 
 
 int main(){
-	Employee employeeArr[10]	;
+	//Employee employeeArr[10];
 
 int choice, i= 0;
 
@@ -56,7 +63,6 @@ switch(choice){
 		break;
 	case 4:
 		break;
-}
-	
-	
-	// https://www.geeksforgeeks.org/array-of-objects-in-c-with-examples/
+};
+
+//https://www.geeksforgeeks.org/array-of-objects-in-c-with-examples/
