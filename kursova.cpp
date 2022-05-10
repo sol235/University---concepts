@@ -34,6 +34,14 @@ int main(){
 
 int choice, i= 0;
 
+do{
+	cout << "Select command:\n";
+	cout << "1.Insert data for new employee:\n";
+	cout << "2.Display all employee data.\n";
+	cout << "3.Display all women over 22, who have worked at least 15 days.\n";
+	cout << "4.";
+
+
 cin >> choice;
 switch(choice){
 	case 1:
